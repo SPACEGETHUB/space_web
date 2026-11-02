@@ -1,0 +1,13 @@
+{
+  "system": "S.P.A.C.E. Immersive Source of Truth (ISOT)",
+  "node": "HP Laptop / WSL 2 Ubuntu",
+  "architect": "Michael C. Sims",
+  "documents": [
+    "S.P.A.C.E. MASTER OPERATIONS MANUAL (M-OPS-001)",
+    "SPACE_LTT_SCHEMA.txt",
+    "S.P.A.C.E. Operational Audit Report",
+    "S.P.A.C.E. Terminal & Script PDF",
+    "S.P.A.C.E. Ecosystem PIPELINE PDF"
+  ],
+  "ingestion_status": "READY"
+}
