@@ -1,0 +1,170 @@
+{
+  "system": "S.P.A.C.E. Immersive Source of Truth (ISOT)",
+  "architect": "Michael C. Sims",
+  "last_updated": "2026-11-02T03:51:03.700113",
+  "total_records": 18,
+  "chat_records": [
+    {
+      "id": "takeout_1465628477412285974",
+      "timestamp": "2026-11-02T02:00:00Z",
+      "title": "S.P.A.C.E. Operational Architecture Review",
+      "source": "mock_chat_export.json",
+      "content_snippet": "Architecting local-first sovereign infrastructure on HP node SPACE. Zero-drift ISOT pipeline initialized.",
+      "raw_text": "Architecting local-first sovereign infrastructure on HP node SPACE. Zero-drift ISOT pipeline initialized.",
+      "ingested_at": "2026-11-02T02:45:34.672384"
+    },
+    {
+      "id": "takeout_2158325235689044069",
+      "timestamp": "2026-11-02T02:15:00Z",
+      "title": "Unified Task Tracker & Workflow Automation",
+      "source": "mock_chat_export.json",
+      "content_snippet": "Configuring python scripts for LTT lead conversion and plain-text persistence.",
+      "raw_text": "Configuring python scripts for LTT lead conversion and plain-text persistence.",
+      "ingested_at": "2026-11-02T02:45:34.673302"
+    },
+    {
+      "id": "takeout_-5411347166664417538",
+      "timestamp": "2026-11-02T02:00:00Z",
+      "title": "S.P.A.C.E. Operational Architecture Review",
+      "source": "mock_chat_export.json",
+      "content_snippet": "Architecting local-first sovereign infrastructure on HP node SPACE. Zero-drift ISOT pipeline initialized.",
+      "raw_text": "Architecting local-first sovereign infrastructure on HP node SPACE. Zero-drift ISOT pipeline initialized.",
+      "ingested_at": "2026-11-02T02:45:58.537183"
+    },
+    {
+      "id": "takeout_1543843940065133620",
+      "timestamp": "2026-11-02T02:15:00Z",
+      "title": "Unified Task Tracker & Workflow Automation",
+      "source": "mock_chat_export.json",
+      "content_snippet": "Configuring python scripts for LTT lead conversion and plain-text persistence.",
+      "raw_text": "Configuring python scripts for LTT lead conversion and plain-text persistence.",
+      "ingested_at": "2026-11-02T02:45:58.537232"
+    },
+    {
+      "id": "takeout_-7925353298424510046",
+      "timestamp": "2026-11-02T02:00:00Z",
+      "title": "S.P.A.C.E. Operational Architecture Review",
+      "source": "mock_chat_export.json",
+      "content_snippet": "Architecting local-first sovereign infrastructure on HP node SPACE. Zero-drift ISOT pipeline initialized.",
+      "raw_text": "Architecting local-first sovereign infrastructure on HP node SPACE. Zero-drift ISOT pipeline initialized.",
+      "ingested_at": "2026-11-02T03:16:45.363368"
+    },
+    {
+      "id": "takeout_813300527889844556",
+      "timestamp": "2026-11-02T02:15:00Z",
+      "title": "Unified Task Tracker & Workflow Automation",
+      "source": "mock_chat_export.json",
+      "content_snippet": "Configuring python scripts for LTT lead conversion and plain-text persistence.",
+      "raw_text": "Configuring python scripts for LTT lead conversion and plain-text persistence.",
+      "ingested_at": "2026-11-02T03:16:45.363437"
+    },
+    {
+      "id": "takeout_-3599678960756640233",
+      "timestamp": "2026-11-02T02:00:00Z",
+      "title": "S.P.A.C.E. Operational Architecture Review",
+      "source": "mock_chat_export.json",
+      "content_snippet": "Architecting local-first sovereign infrastructure on HP node SPACE. Zero-drift ISOT pipeline initialized.",
+      "raw_text": "Architecting local-first sovereign infrastructure on HP node SPACE. Zero-drift ISOT pipeline initialized.",
+      "ingested_at": "2026-11-02T03:19:43.671669"
+    },
+    {
+      "id": "takeout_-7830657415967296160",
+      "timestamp": "2026-11-02T02:15:00Z",
+      "title": "Unified Task Tracker & Workflow Automation",
+      "source": "mock_chat_export.json",
+      "content_snippet": "Configuring python scripts for LTT lead conversion and plain-text persistence.",
+      "raw_text": "Configuring python scripts for LTT lead conversion and plain-text persistence.",
+      "ingested_at": "2026-11-02T03:19:43.671715"
+    },
+    {
+      "id": "takeout_-4953079856512504954",
+      "timestamp": "2026-11-02T02:00:00Z",
+      "title": "S.P.A.C.E. Operational Architecture Review",
+      "source": "mock_chat_export.json",
+      "content_snippet": "Architecting local-first sovereign infrastructure on HP node SPACE. Zero-drift ISOT pipeline initialized.",
+      "raw_text": "Architecting local-first sovereign infrastructure on HP node SPACE. Zero-drift ISOT pipeline initialized.",
+      "ingested_at": "2026-11-02T03:28:49.798677"
+    },
+    {
+      "id": "takeout_3814804496381782368",
+      "timestamp": "2026-11-02T02:15:00Z",
+      "title": "Unified Task Tracker & Workflow Automation",
+      "source": "mock_chat_export.json",
+      "content_snippet": "Configuring python scripts for LTT lead conversion and plain-text persistence.",
+      "raw_text": "Configuring python scripts for LTT lead conversion and plain-text persistence.",
+      "ingested_at": "2026-11-02T03:28:49.799138"
+    },
+    {
+      "id": "takeout_-8304620822316770931",
+      "timestamp": "2026-11-02T02:00:00Z",
+      "title": "S.P.A.C.E. Operational Architecture Review",
+      "source": "mock_chat_export.json",
+      "content_snippet": "Architecting local-first sovereign infrastructure on HP node SPACE. Zero-drift ISOT pipeline initialized.",
+      "raw_text": "Architecting local-first sovereign infrastructure on HP node SPACE. Zero-drift ISOT pipeline initialized.",
+      "ingested_at": "2026-11-02T03:32:40.959148"
+    },
+    {
+      "id": "takeout_-519098332103061896",
+      "timestamp": "2026-11-02T02:15:00Z",
+      "title": "Unified Task Tracker & Workflow Automation",
+      "source": "mock_chat_export.json",
+      "content_snippet": "Configuring python scripts for LTT lead conversion and plain-text persistence.",
+      "raw_text": "Configuring python scripts for LTT lead conversion and plain-text persistence.",
+      "ingested_at": "2026-11-02T03:32:40.959606"
+    },
+    {
+      "id": "takeout_-1503980558978265452",
+      "timestamp": "2026-11-02T02:00:00Z",
+      "title": "S.P.A.C.E. Operational Architecture Review",
+      "source": "mock_chat_export.json",
+      "content_snippet": "Architecting local-first sovereign infrastructure on HP node SPACE. Zero-drift ISOT pipeline initialized.",
+      "raw_text": "Architecting local-first sovereign infrastructure on HP node SPACE. Zero-drift ISOT pipeline initialized.",
+      "ingested_at": "2026-11-02T03:35:24.777856"
+    },
+    {
+      "id": "takeout_-7543771078407342479",
+      "timestamp": "2026-11-02T02:15:00Z",
+      "title": "Unified Task Tracker & Workflow Automation",
+      "source": "mock_chat_export.json",
+      "content_snippet": "Configuring python scripts for LTT lead conversion and plain-text persistence.",
+      "raw_text": "Configuring python scripts for LTT lead conversion and plain-text persistence.",
+      "ingested_at": "2026-11-02T03:35:24.778017"
+    },
+    {
+      "id": "takeout_-7523830796639373985",
+      "timestamp": "2026-11-02T02:00:00Z",
+      "title": "S.P.A.C.E. Operational Architecture Review",
+      "source": "mock_chat_export.json",
+      "content_snippet": "Architecting local-first sovereign infrastructure on HP node SPACE. Zero-drift ISOT pipeline initialized.",
+      "raw_text": "Architecting local-first sovereign infrastructure on HP node SPACE. Zero-drift ISOT pipeline initialized.",
+      "ingested_at": "2026-11-02T03:49:49.207415"
+    },
+    {
+      "id": "takeout_-1189412052990315307",
+      "timestamp": "2026-11-02T02:15:00Z",
+      "title": "Unified Task Tracker & Workflow Automation",
+      "source": "mock_chat_export.json",
+      "content_snippet": "Configuring python scripts for LTT lead conversion and plain-text persistence.",
+      "raw_text": "Configuring python scripts for LTT lead conversion and plain-text persistence.",
+      "ingested_at": "2026-11-02T03:49:49.207869"
+    },
+    {
+      "id": "takeout_7533988242961420886",
+      "timestamp": "2026-11-02T02:00:00Z",
+      "title": "S.P.A.C.E. Operational Architecture Review",
+      "source": "mock_chat_export.json",
+      "content_snippet": "Architecting local-first sovereign infrastructure on HP node SPACE. Zero-drift ISOT pipeline initialized.",
+      "raw_text": "Architecting local-first sovereign infrastructure on HP node SPACE. Zero-drift ISOT pipeline initialized.",
+      "ingested_at": "2026-11-02T03:51:03.700012"
+    },
+    {
+      "id": "takeout_-2227009270033500162",
+      "timestamp": "2026-11-02T02:15:00Z",
+      "title": "Unified Task Tracker & Workflow Automation",
+      "source": "mock_chat_export.json",
+      "content_snippet": "Configuring python scripts for LTT lead conversion and plain-text persistence.",
+      "raw_text": "Configuring python scripts for LTT lead conversion and plain-text persistence.",
+      "ingested_at": "2026-11-02T03:51:03.700053"
+    }
+  ]
+}
