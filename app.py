@@ -1,62 +1,65 @@
 #!/usr/bin/env python3
 """
-S.P.A.C.E. ISOT Mobile Web Gateway
+S.P.A.C.E. Sovereign ISOT Web Gateway (Zero-Dependency http.server)
 Architect: Michael C. Sims
 """
-from flask import Flask, request, render_template_string
+import http.server
 import json
+import os
+import urllib.parse
 
-app = Flask(__name__)
+PORT = 5000
 
-HTML_TEMPLATE = """
-<!DOCTYPE html>
-<html>
-<head>
-    <title>S.P.A.C.E. Mobile ISOT Gateway</title>
-    <style>
-        body { font-family: monospace; background: #0d1117; color: #c9d1d9; padding: 20px; }
-        h1 { color: #58a6ff; border-bottom: 1px solid #30363d; padding-bottom: 10px; }
-        input { background: #161b22; color: #f0f6fc; border: 1px solid #30363d; padding: 8px; width: 60%; }
-        button { background: #238636; color: white; border: none; padding: 8px 16px; cursor: pointer; }
-        .record { background: #161b22; border: 1px solid #30363d; margin: 10px 0; padding: 15px; border-radius: 6px; }
-        .title { font-weight: bold; color: #79c0ff; }
-        .meta { color: #8b949e; font-size: 0.85em; margin-bottom: 8px; }
-    </style>
-</head>
-<body>
-    <h1>S.P.A.C.E. Sovereign Mobile ISOT Engine</h1>
-    <div>
-        <form method="GET" action="/">
-            <input type="text" name="q" placeholder="Search ISOT database..." value="{{ query }}">
-            <button type="submit">Search</button>
-        </form>
-    </div>
-    <h2>Active Records Found: {{ records|length }}</h2>
-    {% for r in records %}
-    <div class="record">
-        <div class="title">{{ r.get('title', 'Untitled') }}</div>
-        <div class="meta">Timestamp: {{ r.get('timestamp', 'N/A') }}</div>
-        <pre>{{ r.get('messages', []) | tojson(indent=2) }}</pre>
-    </div>
-    {% endfor %}
-</body>
-</html>
-"""
+class ISOTHandler(http.server.SimpleHTTPRequestHandler):
+    def do_GET(self):
+        parsed_path = urllib.parse.urlparse(self.path)
+        if parsed_path.path == "/" or parsed_path.path == "":
+            self.send_response(200)
+            self.send_header("Content-type", "text/html; charset=utf-8")
+            self.end_headers()
+            
+            try:
+                with open("isot_ledger.json", "r") as f:
+                    data = json.load(f)
+                    records = data.get("chat_records", [])
+                    total = data.get("total_records", len(records))
+            except Exception:
+                records = []
+                total = 0
 
-def load_ledger():
-    try:
-        with open("isot_ledger.json", "r") as f:
-            return json.load(f).get("chat_records", [])
-    except Exception:
-        return []
-
-@app.route("/", methods=["GET"])
-def index():
-    q = request.args.get("q", "")
-    records = load_ledger()
-    if q:
-        records = [r for r in records if q.lower() in json.dumps(r).lower()]
-    return render_template_string(HTML_TEMPLATE, records=records, query=q)
+            html = f"""<!DOCTYPE html>
+            <html>
+            <head>
+                <title>S.P.A.C.E. ISOT Sovereign Database</title>
+                <style>
+                    body {{ background: #0f172a; color: #f8fafc; font-family: monospace; padding: 2rem; }}
+                    h1 {{ color: #38bdf8; }}
+                    .card {{ background: #1e293b; border: 1px solid #334155; padding: 1rem; margin-bottom: 1rem; border-radius: 6px; }}
+                    .meta {{ color: #94a3b8; font-size: 0.85rem; }}
+                </style>
+            </head>
+            <body>
+                <h1>S.P.A.C.E. Immersive Source of Truth (ISOT)</h1>
+                <p>Total Records: <strong>{total}</strong> | Node: SPACE (HP)</p>
+                <hr style="border-color: #334155; margin: 1rem 0;">
+            """
+            for rec in reversed(records):
+                rid = rec.get("id", "N/A")
+                rtitle = rec.get("title", rec.get("query", "Untitled Record"))
+                rcontent = rec.get("content", rec.get("response", ""))
+                html += f"""
+                <div class="card">
+                    <div><strong>[{rid}] {rtitle}</strong></div>
+                    <div class="meta" style="margin-top: 0.5rem;">{rcontent[:300]}...</div>
+                </div>
+                """
+            html += "</body></html>"
+            self.wfile.write(html.encode("utf-8"))
+        else:
+            return super().do_GET()
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+    server_address = ('', PORT)
+    httpd = http.server.HTTPServer(server_address, ISOTHandler)
+    print(f"[✓] S.P.A.C.E. ISOT Gateway running on port {PORT} (Zero-Dependency)")
+    httpd.serve_forever()
