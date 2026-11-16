@@ -181,3 +181,12 @@ Please make sure you have the correct access rights
 and the repository exists.
 [!] Push deferred - checking network connection or token scope.
 [*] Changes detected at 16/11/2026 16:27:02. Committing to ISOT / Cube...
+[main 88eab5e] ISOT Auto-Sync Daemon: State update at 16/11/2026 16:27:02
+ 1 file changed, 9 insertions(+)
+ssh: Could not resolve hostname github.com: Temporary failure in name resolution
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[!] Push deferred - checking network connection or token scope.
+[*] Changes detected at 16/11/2026 18:45:32. Committing to ISOT / Cube...
