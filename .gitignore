@@ -3,3 +3,4 @@ ltt_tasks.json
 node.log
 __pycache__/
 *.pdf
+isot_sync_daemon.log
