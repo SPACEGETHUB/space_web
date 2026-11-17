@@ -217,3 +217,8 @@ Please make sure you have the correct access rights
 and the repository exists.
 [!] Push deferred - checking network connection or token scope.
 [*] S.P.A.C.E. Live ISOT Sync Daemon active at 16/11/2026 19:23:57
+[main 8fdf6f2] ISOT Auto-Sync: 16/11/2026 19:23:57
+ 2 files changed, 38 insertions(+)
+ create mode 100755 isot_sync_daemon.sh
+fatal: unable to access 'https://github.com/SPACEGETHUB/space_web.git/': Could not resolve host: github.com
+[!] Push deferred at 16/11/2026 19:23:57 (will retry)
